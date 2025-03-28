@@ -6,12 +6,8 @@ property: value;
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to my Website</title>
-    /* styles.css */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+    <title>Landcruiser-Hub</title>
+    
 }
 
 /* styles.css */
@@ -22,17 +18,28 @@ body {
 }
 
 .container {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Create two equal-width columns */
+  gap: 20px; /* Space between columns */
   padding: 20px;
 }
 
 .left-column, .right-column {
-  width: 48%; /* Each column takes up 48% of the container width */
   padding: 10px;
   background-color: #f4f4f4;
   border: 1px solid #ddd;
 }
+
+h2 {
+  color: #333;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr; /* Stack columns on smaller screens */
+  }
+}
+
 
 
 h2 {
