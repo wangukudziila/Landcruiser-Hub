@@ -14,14 +14,21 @@ body {
   padding: 0;
 }
 
+  /* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
 .container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Create two equal-width columns */
-  gap: 20px; /* Space between columns */
+  display: flex;
+  justify-content: space-between;
   padding: 20px;
 }
 
 .left-column, .right-column {
+  width: 48%; /* Each column takes up 48% of the container width */
   padding: 10px;
   background-color: #f4f4f4;
   border: 1px solid #ddd;
@@ -31,14 +38,8 @@ h2 {
   color: #333;
 }
 
-@media screen and (max-width: 768px) {
-  .container {
-    grid-template-columns: 1fr; /* Stack columns on smaller screens */
-  }
-}
 
 
-}body 
 
 font-family: italic; , Italicized text ;
 
